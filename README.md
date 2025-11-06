@@ -1,3 +1,3 @@
-# Website for MMM '24
+# Website for DS4EIW 2026
 
-https://www.mmm2024.org/
+Original template from: https://www.mmm2024.org/
