@@ -21,6 +21,76 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+    .schedule {
+      margin-top: 12px;
+    }
+    .schedule-row {
+      display: flex;
+      align-items: stretch;
+      margin-bottom: 4px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .schedule-time {
+      min-width: 120px;
+      max-width: 120px;
+      padding: 12px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #004AAD;
+      background-color: #dce8f8;
+      display: flex;
+      align-items: flex-start;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+    .schedule-body {
+      flex: 1;
+      padding: 12px 18px;
+    }
+    .schedule-label {
+      font-weight: bold;
+      font-size: 14px;
+      color: #222;
+    }
+    .stype-reg     { background-color: #f0f0f0; }
+    .stype-session { background-color: #eaf1fc; }
+    .stype-break   { background-color: #f5f5f5; }
+    .stype-lunch   { background-color: #fdf8ef; }
+    .stype-special { background-color: #eef5ff; }
+    .stype-social  { background-color: #fff4ec; }
+    .prog-item {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 9px;
+      padding-top: 9px;
+      border-top: 1px solid rgba(0, 74, 173, 0.1);
+    }
+    .prog-item-time {
+      min-width: 85px;
+      font-size: 12px;
+      color: #888;
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+    .prog-item-detail .ptitle {
+      font-size: 13px;
+      font-weight: bold;
+      color: #222;
+    }
+    .prog-item-detail .pauthors {
+      font-size: 12px;
+      font-style: italic;
+      color: #666;
+      margin-top: 2px;
+    }
+    .prog-item-detail .ptitle.is-meta {
+      font-weight: normal;
+      color: #555;
+    }
+    .prog-item-detail .ptitle.is-keynote {
+      color: #004AAD;
+    }
   </style>
 </head>
 
@@ -54,32 +124,196 @@
         <div class="flex-row">
           <div class="flex-item flex-column full-width">
             <p class="text">
-              The DS4EIW 2026 workshop will take place <b>in person</b> on <b>May 4, 2026</b> in <b>Montréal, Canada</b>, co-located with IEEE ICDE 2026.
+              The DS4EIW 2026 workshop will take place <b>in person</b> on <b>May 4, 2026</b> in <b>Montr&eacute;al, Canada</b>, co-located with IEEE ICDE 2026.
             </p>
 
-            <h3>Program Details</h3>
+            <h3>Program - May 4, 2026</h3>
             <hr>
-            <p class="text">
-              <i>The detailed workshop program will be announced after the paper acceptance notifications. Please check back for updates.</i>
-            </p>
-            
-            <h3>Format</h3>
-            <hr>
-            <p class="text">
-              The workshop will feature:
-            </p>
-            <ul>
-              <li>Invited talks from distinguished researchers in the field</li>
-              <li>Paper presentations by accepted authors</li>
-              <li>Panel discussions on current challenges and future directions</li>
-              <li>Networking opportunities for participants</li>
-            </ul>
-            
-            <h3>Registration</h3>
-            <hr>
-            <p class="text">
-              At least one author of each accepted paper must register for the workshop. Registration details will be available through the <a href="https://icde2026.github.io/" target="_blank">IEEE ICDE 2026 conference website</a>.
-            </p>
+
+            <div class="schedule">
+
+              <!-- Registration -->
+              <div class="schedule-row stype-reg">
+                <div class="schedule-time">8:00<br>9:00</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Registration</div>
+                </div>
+              </div>
+
+              <!-- Session 1 -->
+              <div class="schedule-row stype-session">
+                <div class="schedule-time">9:00<br>10:30</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Session 1 - Opening &amp; Keynote</div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">9:00 - 9:10</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle is-meta">Opening Remarks &amp; Welcome</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">9:10 - 9:55</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle is-keynote">Keynote Talk</div>
+                      <div class="pauthors">Speaker to be announced</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">9:55 - 10:15</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Efficient Quantification of Responsibility for the Spread of Misinformation and Disinformation Using the Banzhaf Index</div>
+                      <div class="pauthors">Masatoshi Yoshikawa, Hayate Asazawa</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">10:15 - 10:30</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle is-meta">Discussion</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Break -->
+              <div class="schedule-row stype-break">
+                <div class="schedule-time">10:30<br>11:00</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Coffee Break</div>
+                </div>
+              </div>
+
+              <!-- Session 2 -->
+              <div class="schedule-row stype-session">
+                <div class="schedule-time">11:00<br>12:30</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Session 2 - AI Safety, Fairness &amp; Trustworthiness</div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">11:00 - 11:20</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents</div>
+                      <div class="pauthors">Yonas Atinafu, Robin Cohen</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">11:20 - 11:40</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Improving LLM Performance through Black-Box Online Tuning: A Case for Adding System Specs to Factsheets for Trusted AI</div>
+                      <div class="pauthors">Yonas Atinafu, Henry Lin, Robin Cohen</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">11:40 - 12:00</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Trusting the Detector: Comparing Explanations for Deepfake Identification Across Modalities</div>
+                      <div class="pauthors">Lucas Kopp, Alina Lytovchenko, Robin Cohen</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">12:00 - 12:20</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Structure Selection for Fairness-Constrained Differentially Private Data Synthesis</div>
+                      <div class="pauthors">Naeim Ghahramanpour, Mostafa Milani</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">12:20 - 12:30</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle is-meta">Discussion</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lunch -->
+              <div class="schedule-row stype-lunch">
+                <div class="schedule-time">12:30<br>14:00</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Lunch Break</div>
+                </div>
+              </div>
+
+              <!-- Session 3 -->
+              <div class="schedule-row stype-session">
+                <div class="schedule-time">14:00<br>16:00</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Session 3 - Data Science for Society</div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">14:00 - 14:20</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">From Water Networks to Wellness: Data Science-Driven Design of Human-Inhabited Spaces</div>
+                      <div class="pauthors">Genoveva Vargas-Solar, Peace Ebika, Jos&eacute;-Luis Zechinelli-Martini, Celeste Gabriela Cedillo Gonz&aacute;lez, Javier-Alfonso Espinosa-Oviedo</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">14:20 - 14:40</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">The Human Factor in Data Cleaning: Exploring Preferences and Biases</div>
+                      <div class="pauthors">Hazim AbdElazim, M M Shadman Islam, Mostafa Milani</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">14:40 - 15:00</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Artificial Intelligence and Women&#8217;s Work: A Review of Evidence</div>
+                      <div class="pauthors">Francesca Zafonte, Tania Cerquitelli</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">15:00 - 15:20</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Improving Sentiment Analysis of Mobile App Reviews through Emoji and Slang Normalization</div>
+                      <div class="pauthors">Tinne Dey, Zheying Zhang, Kostas Stefanidis</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">15:20 - 15:40</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle">Uncertainty Aware Adaptive Proximal Policy Optimization for Pixel Based Autonomous Car Racing</div>
+                      <div class="pauthors">Dipanjan Sen</div>
+                    </div>
+                  </div>
+
+                  <div class="prog-item">
+                    <div class="prog-item-time">15:40 - 16:00</div>
+                    <div class="prog-item-detail">
+                      <div class="ptitle is-meta">Closing Remarks by the Workshop Organizers</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Afternoon Break -->
+              <div class="schedule-row stype-break">
+                <div class="schedule-time">16:00<br>16:30</div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Coffee Break</div>
+                </div>
+              </div>
+
+              <!-- Main conference resumes -->
+              <div class="schedule-row stype-reg">
+                <div class="schedule-time">16:30<br></div>
+                <div class="schedule-body">
+                  <div class="schedule-label">Main Conference Events Resume</div>
+                </div>
+              </div>
+
+            </div><!-- .schedule -->
+
           </div>
         </div>
       </div>
